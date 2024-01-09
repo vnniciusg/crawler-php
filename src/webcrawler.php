@@ -4,7 +4,7 @@ require 'src/functions/csv_generator.php';
 
 $url = "https://amleiloeiro.com.br";
 
-$csvFilePath = "data/" . date("Y-m-d") . ".csv";
+$csvFilePath = "data/" . date("Y-m-d") . ".xlsx";
 
 $data = crawlAmLeiloeiro($url);
 
