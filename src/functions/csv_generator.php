@@ -1,13 +1,30 @@
 <?php
 
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
 function createCSV($data, $file_path)
 {
-    $csvFile = fopen($file_path, "w");
+    $spreadsheet = new Spreadsheet();
+    $sheet = $spreadsheet->getActiveSheet();
 
-    fputcsv($csvFile, ["Link", "Data do Primeiro Leilão", "Data do Segundo Leilão", "Preço"]);
+    $sheet->setCellValue('A1', 'Link');
+    $sheet->setCellValue('B1', 'Data do Primeiro Leilão');
+    $sheet->setCellValue('C1', 'Data do Segundo Leilão');
+    $sheet->setCellValue('D1', 'Preço');
 
+    $rowIndex = 2;
     foreach ($data as $row) {
-        fputcsv($csvFile, $row);
+        $sheet->setCellValue('A' . $rowIndex, $row['urlItem']);
+        $sheet->setCellValue('B' . $rowIndex, $row['dataPrimeiroLote']);
+        $sheet->setCellValue('C' . $rowIndex, $row['dataSegundoLote']);
+        $sheet->setCellValue('D' . $rowIndex, $row['valor']);
+        $rowIndex++;
     }
-    fclose($csvFile);
+
+    $writer = new Xlsx($spreadsheet);
+    $writer->save($file_path);
+
+    echo "Excel criado com sucesso!\n";
+
 }
