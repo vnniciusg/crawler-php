@@ -8,7 +8,6 @@ use Symfony\Component\HttpClient\HttpClient;
 function crawlAmLeiloeiro($url)
 {
     $data = [];
-    $visitedUrls = [];
 
     $browser = new HttpBrowser(HttpClient::create());
 
