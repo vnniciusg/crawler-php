@@ -8,4 +8,7 @@ $csvFilePath = "data/" . date("Y-m-d") . ".csv";
 
 $data = crawlAmLeiloeiro($url);
 
+echo "----------------\n";
+echo "Dados coletados:\n";
+
 createCSV($data, $csvFilePath);
