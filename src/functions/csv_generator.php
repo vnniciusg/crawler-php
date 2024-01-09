@@ -13,12 +13,15 @@ function createCSV($data, $file_path)
     $sheet->setCellValue('C1', 'Data do Segundo Leilão');
     $sheet->setCellValue('D1', 'Preço');
 
+  
+
     $rowIndex = 2;
     foreach ($data as $row) {
         $sheet->setCellValue('A' . $rowIndex, $row['urlItem']);
         $sheet->setCellValue('B' . $rowIndex, $row['dataPrimeiroLote']);
         $sheet->setCellValue('C' . $rowIndex, $row['dataSegundoLote']);
         $sheet->setCellValue('D' . $rowIndex, $row['valor']);
+        $sheet->getStyle('D' . $rowIndex)->getNumberFormat()->setFormatCode('R$ #,##0.00_-');
         $rowIndex++;
     }
 
