@@ -45,6 +45,7 @@ Desenvolver um webcrawler em PHP para extrair informações de lotes do site sol
 ## Utils
 
    Para encontrar o id do container
+   
    ```bash
    docker ps -a
     ```
