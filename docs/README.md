@@ -28,7 +28,7 @@ Desenvolver um webcrawler em PHP para extrair informações de lotes do site sol
    ```bash
    docker cp {container_id}:/app/data/ .
     ```
-   
+
 ## Alternativa sem Docker:
 1. **Instalar Dependencias:**
    
@@ -39,4 +39,12 @@ Desenvolver um webcrawler em PHP para extrair informações de lotes do site sol
    
    ```bash
    php src/webcrawler.php
+    ```
+
+
+## Utils
+
+   Para encontrar o id do container
+   ```bash
+   docker ps -a
     ```
