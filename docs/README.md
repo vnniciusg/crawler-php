@@ -1,4 +1,5 @@
-
+## **Objetivo**
+Desenvolver um webcrawler em PHP para extrair informações de lotes do site AM Leiloeiro, e criar um arquivo CSV contendo os links capturados, datas do primeiro e segundo leilão, e os preços de cada um.
 
 ## **Tecnologias Utilizadas**
 
