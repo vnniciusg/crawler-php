@@ -8,6 +8,7 @@
 
 ## **Instruções de Uso**
 
+## Docker(Recomendado)
 1. **Construir a Imagem Docker:**
    
    ```bash
@@ -27,3 +28,14 @@
    docker cp {container_id}:/app/data/ .
     ```
    
+## Alternativa sem Docker:
+1. **Instalar Dependencias:**
+   
+   ```bash
+   composer install
+    ```
+2. **Executar o Webcrawler:**
+   
+   ```bash
+   php webcrawler.php
+    ```
