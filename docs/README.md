@@ -2,9 +2,9 @@
 
 ## **Tecnologias Utilizadas**
 
-1.   PHP
-2.   PhpSpreadsheet
-3.   Symfony
+1.   PHP 8.2.14
+2.   PhpSpreadsheet 1.29.0
+3.   Symfony 7.0.0
 
 ## **Instruções de Uso**
 
