@@ -1,4 +1,11 @@
 
+
+## **Tecnologias Utilizadas**
+
+1.   PHP
+2.   PhpSpreadsheet
+3.   Symfony
+
 ## **Instruções de Uso**
 
 1. **Construir a Imagem Docker:**
