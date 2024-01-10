@@ -37,5 +37,5 @@
 2. **Executar o Webcrawler:**
    
    ```bash
-   php webcrawler.php
+   php src/webcrawler.php
     ```
