@@ -48,4 +48,3 @@ Desenvolver um webcrawler em PHP para extrair informações de lotes do site sol
    
    ```bash
    docker ps -a
-    ```
