@@ -1,4 +1,6 @@
 
+*Instruções de Uso*
+
 1. **Construir a Imagem Docker:**
    
    ```bash
